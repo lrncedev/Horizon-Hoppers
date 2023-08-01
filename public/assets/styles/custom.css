@@ -1,0 +1,60 @@
+html {
+  overflow-x: hidden;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-top: 4px solid rgb(6 95 70);
+  background-color: white;
+  list-style: none;
+  width: 200%;
+  color: black;
+  margin: 0;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  text-transform: none;
+  border: 1px solid rgb(211, 204, 204);
+  padding: .5em;
+  transition: .4s;
+}
+
+.dropdown-menu li a {
+  margin-left: 0; /* Resetting margin */
+  transition: margin-left 0.4s; /* Adding transition effect */
+}
+
+.packages-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li:hover a {
+  margin-left: 20px; /* Shift the anchor tag to the left */
+}
+
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.6)) ,url('https://www.terra-balka.com/wp-content/uploads/adobestock-287210257-1280x800.jpeg');
+  height: 100%; 
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-on-scroll {
+  background-color:	rgba(10,128,128, .85); /* Adjust the background color and opacity as needed */
+}
