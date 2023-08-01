@@ -5,12 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" 
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="stylesheet" href="/assets/styles/style.css"> 
+    <link rel="stylesheet" href="/assets/styles/custom.css">
+    <style>
+      
+    </style>
     <title>Document</title>
 </head>
 <body>
+    <%- include('../partials/hero-section.ejs', 
+    {
+      mainText: 'Explore the World with Us',
+      supportingText: 'Discover your dream destinations and embark on unforgettable adventures with our exclusive international travel packages.'
+    }
+    ) %>
     <%- include('../partials/callback-section.ejs') %>
     
     
+<script>
+  // JavaScript to change header background on scroll
+  const header = document.getElementById('main-header');
+  const scrollThreshold = 100; // Adjust this value to determine when to change the background color
+
+  function updateHeaderBackground() {
+    if (window.scrollY > scrollThreshold) {
+      header.classList.add('bg-on-scroll');
+    } else {
+      header.classList.remove('bg-on-scroll');
+    }
+  }
+
+  // Add a scroll event listener to update the header background
+  window.addEventListener('scroll', updateHeaderBackground);
+</script>
 </body>
+
 </html>

@@ -1,0 +1,20 @@
+<%- include('../components/molecules/header-molecule.ejs') %>
+<section class='min-h-screen hero-section max-w-screen flex justify-center items-center' >
+  <div class="w-3/5 mx-auto flex-col space-y-5 text-center">
+    <div class="text-7xl font-bold text-white uppercase">
+      <%= mainText %>
+    </div>
+    <p class="text-white text-lg">
+      <%= supportingText %>
+    </p>
+    <div>
+      <%- include('../components/atoms/cta-book-now.ejs', 
+        {
+          content: "Continue Reading", 
+          redirect: "#", 
+          style: 'text-white font-bold px-6 py-4 rounded-md bg-emerald-700 mt-4 uppercase'
+        }) 
+      %>
+    </div>
+  </div>
+</section>
