@@ -1,0 +1,9 @@
+<div class="flex gap-x-2 mt-2">
+  <% for (let i = 1; i <= 5; i++) { %>
+    <% if (i <= rating) { %>
+      <i class="fa fa-star material-symbols-outlined text-white hover:cursor-pointer" aria-hidden="true"></i>
+    <% } else { %>
+      <i class="fa fa-star material-symbols-outlined text-gray-400 hover:cursor-pointer" aria-hidden="true"></i>
+    <% } %>
+  <% } %>
+</div>
