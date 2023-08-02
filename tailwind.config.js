@@ -2,7 +2,12 @@
 module.exports = {
   content: ['./views/**/*.ejs'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily : {
+        baloo: ['Baloo 2', 'cursive'],
+        montserrat: ['Montserrat', 'sans-serif']
+      },
+    },
   },
   plugins: [],
 }
