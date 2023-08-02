@@ -1,0 +1,7 @@
+<!-- stars.ejs -->
+<div class="text-watermelon-red">
+    <% for (let i = 0; i < 5; i++) { %>
+      <i class="<%= i+1 <= ratingOutOfFive ? 'text-emerald-700' : 'text-gray-400' %> fas fa-star"></i>
+    <% } %>
+    
+  </div>
