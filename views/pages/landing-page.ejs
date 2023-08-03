@@ -8,6 +8,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     <link rel="icon" href="/assets/logos/logo.png">
     <link rel="stylesheet" href="/assets/styles/style.css"> 
     <link rel="stylesheet" href="/assets/styles/custom.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
     <style>
       
     </style>
@@ -23,6 +28,30 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     <%- include('../partials/popular-destination-section.ejs') %>
     <%- include('../partials/callback-section.ejs') %>
     <%- include('../partials/adventure-category-section.ejs') %>
+
+    <%- include('../partials/testimonial.ejs') %>
+    <%- include('../partials/footer.ejs') %>
+
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+
     <%- include('../partials/special-offer-section.ejs') %>
 
     <!-- Navigation arrow up -->
@@ -33,9 +62,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 
     
 
-    
-    
-    
+
 <script>
   // JavaScript to change header background on scroll
   const header = document.getElementById('main-header');
@@ -57,6 +84,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   // Add a scroll event listener to update the header background
   window.addEventListener('scroll', updateHeaderBackground);
 </script>
+
+
+
 </body>
 
 </html>
