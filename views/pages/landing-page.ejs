@@ -3,28 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" 
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="/assets/logos/logo.png">
     <link rel="stylesheet" href="/assets/styles/style.css"> 
     <link rel="stylesheet" href="/assets/styles/custom.css">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-    <style>
-      
-    </style>
     <title>Horizon Hopper</title>
 </head>
 <body>
-    <%- include('../partials/hero-section.ejs', 
-    {
-      mainText: 'Explore the World with Us',
-      supportingText: 'Discover your dream destinations and embark on unforgettable adventures with our exclusive international travel packages.'
-    }
-    ) %>
+    <%- include('../partials/hero-section.ejs', ) %>
     <%- include('../partials/popular-destination-section.ejs') %>
     <%- include('../partials/callback-section.ejs') %>
     <%- include('../partials/adventure-category-section.ejs') %>
@@ -66,22 +54,32 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 <script>
   // JavaScript to change header background on scroll
   const header = document.getElementById('main-header');
+  const topHeader = document.getElementById('top-header');
   const scrollThreshold = 100; // Adjust this value to determine when to change the background color
   const scrollUpIcon = document.getElementById('scroll-up-icon')
+  const toggler = document.querySelector('.toggler');
+  const menuBlock = document.querySelector('.menu-block');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
+  toggler.addEventListener('click', () => {
+    menuBlock.classList.toggle('hidden');
+  });
 
   function updateHeaderBackground() {
     if (window.scrollY > scrollThreshold) {
-      header.classList.add('bg-on-scroll');
+      header.classList.add('bg-on-scroll'); //add class on scroll
       scrollUpIcon.classList.remove('hidden')
-
+      topHeader.classList.add('hidden') //hide top-header
+      mobileMenu.classList.remove('mt-2') //remove mobile menu margine
     } else {
-      header.classList.remove('bg-on-scroll');
+      header.classList.remove('bg-on-scroll');  //remove class on scroll
       scrollUpIcon.classList.add('hidden')
-
+      mobileMenu.classList.add('mt-2') //add top-header
+      topHeader.classList.remove('hidden')  //display block top-header 
     }
   }
 
-  // Add a scroll event listener to update the header background
+
   window.addEventListener('scroll', updateHeaderBackground);
 </script>
 
