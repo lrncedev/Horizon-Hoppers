@@ -57,7 +57,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 
     <!-- Navigation arrow up -->
     <a class="fixed bottom-[2%] right-[2%] text-emerald-950 text-4xl z-50 animate-bounce" href="#">
-      <i class="fa fa-angle-double-up" aria-hidden="true" id="scroll-up-icon"></i>
+      <i class="fa fa-angle-double-up hidden" aria-hidden="true" id="scroll-up-icon"></i>
     </a>
     
 
@@ -69,6 +69,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   const header = document.getElementById('main-header');
   const scrollThreshold = 100; // Adjust this value to determine when to change the background color
   const scrollUpIcon = document.getElementById('scroll-up-icon')
+  const playButton = document.getElementById('play-button')
+  const videoPlayer = document.getElementById('video-player')
+  const closeIcon = document.getElementById('close-icon')
 
   function updateHeaderBackground() {
     if (window.scrollY > scrollThreshold) {
@@ -82,8 +85,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     }
   }
 
+  function showVideoPlayer() {
+    videoPlayer.classList.replace('hidden', 'flex')
+  }
+
+  function closeVideoPlayer() {
+    videoPlayer.classList.replace('flex', 'hidden')
+
+  }
+
   // Add a scroll event listener to update the header background
   window.addEventListener('scroll', updateHeaderBackground);
+  playButton.addEventListener('click', showVideoPlayer)
+  closeIcon.addEventListener('click', closeVideoPlayer)
 </script>
 
 
