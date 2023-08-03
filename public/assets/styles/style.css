@@ -893,6 +893,15 @@ video {
 .bg-gradient-to-b{
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
+.bg-\[url\(\'https\:\/\/demo\.bosathemes\.com\/html\/travele\/assets\/images\/img9\'\)\]{
+  background-image: url('https://demo.bosathemes.com/html/travele/assets/images/img9');
+}
+.bg-\[url\(\'\/assets\/stats-images\/package1\.svg\'\)\]{
+  background-image: url('/assets/stats-images/package1.svg');
+}
+.bg-\[url\(\'\/assets\/stats-images\/package1\.jpg\'\)\]{
+  background-image: url('/assets/stats-images/package1.jpg');
+}
 .from-transparent{
   --tw-gradient-from: transparent var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
