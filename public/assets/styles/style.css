@@ -720,6 +720,12 @@ video {
 .h-full{
   height: 100%;
 }
+.h-4{
+  height: 1rem;
+}
+.h-12{
+  height: 3rem;
+}
 .min-h-screen{
   min-height: 100vh;
 }
@@ -741,6 +747,15 @@ video {
 }
 .w-screen{
   width: 100vw;
+}
+.w-4{
+  width: 1rem;
+}
+.w-10{
+  width: 2.5rem;
+}
+.w-12{
+  width: 3rem;
 }
 @keyframes pulse{
 
@@ -850,6 +865,14 @@ video {
 .rounded-sm{
   border-radius: 0.125rem;
 }
+.rounded-l-full{
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+.rounded-r-full{
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
 .rounded-tl-2xl{
   border-top-left-radius: 1rem;
 }
@@ -881,8 +904,19 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
+.border-b-black{
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+.border-b-gray-500{
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(107 114 128 / var(--tw-border-opacity));
+}
 .border-opacity-20{
   --tw-border-opacity: 0.2;
+}
+.border-opacity-10{
+  --tw-border-opacity: 0.1;
 }
 .bg-emerald-700{
   --tw-bg-opacity: 1;
@@ -932,6 +966,9 @@ video {
 }
 .p-0{
   padding: 0px;
+}
+.p-2{
+  padding: 0.5rem;
 }
 .px-10{
   padding-left: 2.5rem;
@@ -991,6 +1028,12 @@ video {
 }
 .pt-24{
   padding-top: 6rem;
+}
+.pl-10{
+  padding-left: 2.5rem;
+}
+.pl-8{
+  padding-left: 2rem;
 }
 .text-center{
   text-align: center;
@@ -1095,6 +1138,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(250 204 21 / var(--tw-text-opacity));
 }
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
 .opacity-50{
   opacity: 0.5;
 }
@@ -1113,6 +1160,10 @@ video {
 }
 .brightness-90{
   --tw-brightness: brightness(.9);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.brightness-0{
+  --tw-brightness: brightness(0);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .drop-shadow-lg{
@@ -1147,6 +1198,14 @@ video {
 .hover\:bg-emerald-700:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(4 120 87 / var(--tw-bg-opacity));
+}
+.hover\:bg-yellow-700:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(161 98 7 / var(--tw-bg-opacity));
+}
+.hover\:bg-yellow-500:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
