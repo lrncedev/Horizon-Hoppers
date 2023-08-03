@@ -14,6 +14,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     <title>Horizon Hopper</title>
 </head>
 <body>
+  <div class="m-0 p-0" id="top-div"></div>
     <%- include('../partials/hero-section.ejs', 
     {
       mainText: 'Explore the World with Us',
@@ -25,6 +26,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     <%- include('../partials/adventure-category-section.ejs') %>
     <%- include('../partials/special-offer-section.ejs') %>
 
+    <!-- Navigation arrow up -->
+    <a class="fixed bottom-[2%] right-[2%] text-emerald-950 text-4xl z-50" href="#top-div">
+      <i class="fa fa-angle-double-up" aria-hidden="true" id="scroll-up-icon"></i>
+    </a>
+    
+
+    
+
     
     
     
@@ -32,12 +41,17 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   // JavaScript to change header background on scroll
   const header = document.getElementById('main-header');
   const scrollThreshold = 100; // Adjust this value to determine when to change the background color
+  const scrollUpIcon = document.getElementById('scroll-up-icon')
 
   function updateHeaderBackground() {
     if (window.scrollY > scrollThreshold) {
       header.classList.add('bg-on-scroll');
+      scrollUpIcon.classList.remove('hidden')
+
     } else {
       header.classList.remove('bg-on-scroll');
+      scrollUpIcon.classList.add('hidden')
+
     }
   }
 
