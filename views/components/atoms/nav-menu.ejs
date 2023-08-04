@@ -1,33 +1,20 @@
-<nav >
-  <ul class="flex gap-x-1 uppercase justify-center">
-    <li class="px-3 py-6 hover-state text-white font-bold">Home</li>
-    <li class="px-3 py-6 hover-state packages-dropdown text-white font-bold" >
-      Destinations
-      <ul class="dropdown-menu flex-col font-medium">
-        <li class="hover:bg-emerald-700 hover:text-white">
-          <a href="">Sample Destination</a>
-        </li>
-        <li class="hover:bg-emerald-700 hover:text-white">
-          <a href="">Sample Destination</a>
-        </li>
-        <li class="hover:bg-emerald-700 hover:text-white">
-          <a href="">Sample Destination</a>
-        </li>
-      </ul>
-    </li>
-    <li class="px-3 py-6 hover-state packages-dropdown text-white font-bold">
-      Packages
-      <ul class="dropdown-menu flex-col font-medium">
-        <li class="hover:bg-emerald-700 hover:text-white">
-          <a href="">Sample Package</a>
-        </li>
-        <li class="hover:bg-emerald-700 hover:text-white">
-          <a href="">Sample Package</a>
-        </li>
-        <li class="hover:bg-emerald-700 hover:text-white">
-          <a href="">Sample Package</a>
-        </li>
-      </ul>
-    </li>
+<nav>
+  <ul class="flex flex-col md:flex-row gap-x-1">
+    <% navItems.forEach(item => { %>
+      <li class="packages-dropdown  py-2 md:px-3 md:py-4 text-gray-700 md:text-white md:font-bold text-lg md:text-xl md:bg-transparent bg-white border-b border-gray-500 md:border-none">
+        <% if (item.subItems) { %>
+            <%= item.title %>
+            <ul class="dropdown-menu flex-col font-normal">
+              <% item.subItems.forEach(subItem => { %>
+                <li class="hover:bg-emerald-700 hover:text-white text-base text-gray-700">
+                  <a href="<%= subItem.link %>" class="block"><%= subItem.title %></a>
+                </li>
+              <% }); %>
+            </ul>
+        <% } else { %>
+          <a href="<%= item.link %>" class="block"><%= item.title %></a>
+        <% } %>
+      </li>
+    <% }); %>
   </ul>
 </nav>

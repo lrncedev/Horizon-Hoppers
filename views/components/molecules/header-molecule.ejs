@@ -1,8 +1,59 @@
-<header id="main-header"  class="flex py-2 w-screen fixed top-0 left-0 right-0 z-[100]">
-  <div class="grid grid-cols-3 w-full">
+<header id="main-header"  class="fixed top-0 left-0 right-0 z-[100]">
+  <div class="flex justify-between items-center w-full px-4 pt-2 " id="top-header">
     <%- include('../atoms/logo.ejs') %>
-    <%- include('../atoms/nav-menu.ejs') %>
+    <div class="hidden md:block">
+      <%- include('../atoms/nav-menu.ejs', { 
+        navItems: [
+          { title: 'Home', link: '/' },
+          { 
+            title: 'Destinations', 
+            subItems: [
+              { title: 'Test Destination 1', link: '/' },
+              { title: 'Test Destination 2', link: '/' },
+              { title: 'Test Destination 3', link: '/' }
+            ]
+          },
+          { 
+            title: 'Packages', 
+            subItems: [
+              { title: 'Test Package 1', link: '/' },
+              { title: 'Test Package 2', link: '/' },
+              { title: 'Test Package 3', link: '/' }
+            ]
+          }
+        ]
+      }) %>
+    </div>
     <%- include('../atoms/book-now-cta-atom.ejs') %>
-    <!-- <%- include('../atoms/cta-book-now.ejs', {content: "Book Now", redirect: "/booking", style: 'text-white px-5 py-2 rounded-sm bg-emerald-700 font-bold'}) %> -->
+  </div>
+  <div class="mobile-menu md:hidden mt-2"> 
+    <div class="text-center border-y border-white py-[3px] toggler">
+      <i class="fa fa-bars text-white text-xl mr-2" aria-hidden="true"></i> 
+      <span class="text-white uppercase font-bold">Menu</span>
+    
+    </div>
+    <div class="mt-[1px] menu-block hidden">
+      <%- include('../atoms/nav-menu.ejs', { 
+        navItems: [
+          { title: 'Home', link: '/' },
+          { 
+            title: 'Destinations', 
+            subItems: [
+              { title: 'Test Destination 1', link: '/' },
+              { title: 'Test Destination 2', link: '/' },
+              { title: 'Test Destination 3', link: '/' }
+            ]
+          },
+          { 
+            title: 'Packages', 
+            subItems: [
+              { title: 'Test Package 1', link: '/' },
+              { title: 'Test Package 2', link: '/' },
+              { title: 'Test Package 3', link: '/' }
+            ]
+          }
+        ]
+      }) %>
+    </div>
   </div>
 </header>
