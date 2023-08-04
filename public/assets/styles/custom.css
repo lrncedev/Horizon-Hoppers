@@ -24,7 +24,7 @@ nav ul li {
   width: 200%;
   color: black;
   margin: 0;
-  z-index: 1000;
+  z-index: 40;
 }
 
 .dropdown-menu li {
