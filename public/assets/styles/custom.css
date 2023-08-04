@@ -47,8 +47,8 @@ nav ul li {
   margin-left: 20px; /* Shift the anchor tag to the left */
 }
 
-.hero-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.6)) ,url('https://www.terra-balka.com/wp-content/uploads/adobestock-287210257-1280x800.jpeg');
+.hero-section1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.6)) ,url('https://demo.bosathemes.com/html/travele/assets/images/slider-banner-1.jpg');
   height: 100%; 
 
   background-position: center;
@@ -56,6 +56,14 @@ nav ul li {
   background-size: cover;
 }
 
+.hero-section2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.6)) ,url('https://demo.bosathemes.com/html/travele/assets/images/slider-banner-2.jpg');
+  height: 100%; 
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .bg-on-scroll {
   background-color:	rgba(0, 0, 0, 0.7); /* Adjust the background color and opacity as needed */
 }
