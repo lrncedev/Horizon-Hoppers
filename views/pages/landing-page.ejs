@@ -16,33 +16,13 @@
     <%- include('../partials/popular-destination-section.ejs') %>
     <%- include('../partials/callback-section.ejs') %>
     <%- include('../partials/adventure-category-section.ejs') %>
-
+    <%- include('../partials/special-offer-section.ejs') %>
+    <%- include('../partials/promotion.ejs') %>
     <%- include('../partials/testimonial.ejs') %>
     <%- include('../partials/footer.ejs') %>
 
-    <script>
-      const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-      
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-      
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
-    </script>
 
-    <%- include('../partials/special-offer-section.ejs') %>
-    <%- include('../partials/promotion.ejs') %>
-
+  
     <!-- Navigation arrow up -->
     <a class="fixed bottom-[2%] right-[2%] text-emerald-950 text-4xl z-50 animate-bounce" href="#">
       <i class="fa fa-angle-double-up hidden" aria-hidden="true" id="scroll-up-icon"></i>
@@ -70,6 +50,26 @@
   const playButton = document.getElementById('play-button')
   const videoPlayer = document.getElementById('video-player')
   const closeIcon = document.getElementById('close-icon')
+
+
+  const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
 
 
   function updateHeaderBackground() {
@@ -111,9 +111,6 @@
   playButton.addEventListener('click', showVideoPlayer)
   closeIcon.addEventListener('click', closeVideoPlayer)
 </script>
-
-
-
 </body>
 
 </html>
