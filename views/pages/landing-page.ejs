@@ -69,13 +69,20 @@
     if (window.scrollY > scrollThreshold) {
       header.classList.add('bg-on-scroll'); //add class on scroll
       scrollUpIcon.classList.remove('hidden')
-      topHeader.classList.add('hidden') //hide top-header
+      topHeader.classList.add('hidden'); // hide top-header on small screens
       mobileMenu.classList.remove('mt-2') //remove mobile menu margine
+      topHeader.classList.remove('pb-2')
     } else {
       header.classList.remove('bg-on-scroll');  //remove class on scroll
       scrollUpIcon.classList.add('hidden')
       mobileMenu.classList.add('mt-2') //add top-header
+      
       topHeader.classList.remove('hidden')  //display block top-header 
+    }
+
+    if (window.innerWidth >= 768) {
+      topHeader.classList.remove('hidden'); // display top-header on medium and larger screens
+      topHeader.classList.add('pb-2')
     }
   }
 
