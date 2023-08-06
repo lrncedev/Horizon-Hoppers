@@ -11,8 +11,42 @@
 
     <title>Horizon Hopper</title>
 </head>
-<body>
-    
-    
+<body class = "  ">
+    <%- include('../components/molecules/header-molecule.ejs') %>
+    <div class = "bg-gray-500 h-full pt-[15%] pb-[5%] bg-[url('https://demo.bosathemes.com/html/travele/assets/images/inner-banner.jpg')] bg-cover bg-no-repeat bg-center bg-blend-multiply   ">
+        <p class =" 2xl:text-7xl lg:text-7xl md:text-7xl pb-5 text-5xl text-center text-white font-bold  ">Destination</p>
+    </div>
+    <!--PACKAGES -->
+    <div class=" pt-16 lg:px-[9%] 2xl:px-[20%] xxl:h-full sm:w-full flex flex-col justify-center items-center bg-white mb-10">
+       
+        <div class=" flex flex-wrap justify-center items-center  ">
+        
+           <%- include('../components/molecules/card-popular.ejs', {priceperperson: 1900, daynightformat: '7D/6N', numberOfPeople: 5, location: 'Malaysia',  packageTitle: 'Sunset view of beautiful lakeside resident',  numberOfReviews: 20,  ratingOutOfFive : 4, description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit luctus nec ullam. Ut elit tellus, luctus nec ullam elit tellpus.', picture: 'package1.jpg'}); %>
+           <%- include('../components/molecules/card-popular.ejs',{priceperperson: 1230,   daynightformat: '5D/4N' , numberOfPeople: 8, location: 'Canada', packageTitle: 'Experience the natural beauty of island', numberOfReviews: 20, ratingOutOfFive : 5, description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit luctus nec ullam. Ut elit tellus, luctus nec ullam elit tellpus.', picture: 'package1.jpg'}); %>
+           <%- include('../components/molecules/card-popular.ejs',{priceperperson: 2000,   daynightformat: '6D/5N',numberOfPeople: 6,  location: 'Portugal', packageTitle: 'Vacation to the water city of Portugal',  numberOfReviews: 20,  ratingOutOfFive : 6, description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit luctus nec ullam. Ut elit tellus, luctus nec ullam elit tellpus.', picture: 'package1.jpg'}); %>
+           
+        </div>
+        
+     
+       
+     
+    </div> 
+    <div class=" pt-3 lg:px-[9%] 2xl:px-[20%] xxl:h-full sm:w-full flex flex-col justify-center items-center bg-white mb-20">
+       
+        <div class=" flex flex-wrap justify-center items-center  ">
+        
+           <%- include('../components/molecules/card-popular.ejs', {priceperperson: 1900, daynightformat: '7D/6N', numberOfPeople: 5, location: 'Malaysia',  packageTitle: 'Sunset view of beautiful lakeside resident',  numberOfReviews: 20,  ratingOutOfFive : 4, description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit luctus nec ullam. Ut elit tellus, luctus nec ullam elit tellpus.', picture: 'package1.jpg'}); %>
+           <%- include('../components/molecules/card-popular.ejs',{priceperperson: 1230,   daynightformat: '5D/4N' , numberOfPeople: 8, location: 'Canada', packageTitle: 'Experience the natural beauty of island', numberOfReviews: 20, ratingOutOfFive : 5, description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit luctus nec ullam. Ut elit tellus, luctus nec ullam elit tellpus.', picture: 'package1.jpg'}); %>
+           <%- include('../components/molecules/card-popular.ejs',{priceperperson: 2000,   daynightformat: '6D/5N',numberOfPeople: 6,  location: 'Portugal', packageTitle: 'Vacation to the water city of Portugal',  numberOfReviews: 20,  ratingOutOfFive : 6, description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit luctus nec ullam. Ut elit tellus, luctus nec ullam elit tellpus.', picture: 'package1.jpg'}); %>
+           
+        </div>
+        
+     
+       
+     
+    </div>
+    <!--PROMOTION & FOOTER--> 
+    <%- include('../partials/promotion.ejs') %>
+    <%- include('../partials/footer.ejs') %>
 </body>
 </html>
