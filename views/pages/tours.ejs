@@ -12,6 +12,7 @@
     <title>Horizon Hopper</title>
 </head>
 <body>
+    <%- include('../components/molecules/filter-molecule.ejs') %>  
     <section class=" px-[15%] pt-10 pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 bg-gray-100">
         <div class="flex flex-col w-fit border max-w-[375px] shadow-lg bg-white hover:-translate-y-5 transition-all duration-500">
             <div class="w-full h-fit relative">
@@ -243,6 +244,44 @@
         </div>
         
     </section>
+
+<script>
+  const selectedItems = document.querySelectorAll(".button-group");
+  const optionsContainers = document.querySelectorAll(".option-container");
+  const groupTitle = document.querySelectorAll(".group-title");
+
+  selectedItems.forEach((selected, index) => {
+    selected.addEventListener("click", () => {
+      optionsContainers.forEach((container, containerIndex) => {
+        if(containerIndex == index) {
+          container.classList.toggle("active");
+          container.classList.toggle("z-50");
+          container.classList.toggle("hidden");
+        }
+        else {
+          container.classList.remove("active");
+          container.classList.remove("z-50");
+          container.classList.add("hidden");
+        }
+      })
+      
+    });
     
+    const input = optionsContainers[index].querySelector('.search-box');
+    input.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+
+    const items = optionsContainers[index].querySelectorAll('.option-item');
+    let groupItem = groupTitle[index];
+    items.forEach((item, index) => {
+      item.addEventListener('click', () => {
+        groupItem.textContent = item.textContent;
+        input.value = '';
+      })
+    })
+  });
+
+</script>
 </body>
 </html>
