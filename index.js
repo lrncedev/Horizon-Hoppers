@@ -3,6 +3,7 @@ const path = require('path')
 const adventureCategories = require('./public/assets/data/adventureCategories')
 const offersData = require('./public/assets/data/offersData')
 const carouselData = require('./public/assets/data/carouselData')
+const itinerary = require('./public/assets/data/tourItinerary')
 const app = express()
 
 app.use(express.static('public'))
@@ -13,7 +14,7 @@ app.get('/', (req, res)=> {
 })
 
 app.get('/tours', (req, res)=> {
-    res.render('pages/tours.ejs')
+    res.render('pages/tours.ejs', {itinerary})
 })
 
 
