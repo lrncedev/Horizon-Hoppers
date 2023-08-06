@@ -12,7 +12,9 @@
     <title>Horizon Hopper</title>
 </head>
 <body>
-    <%- include('../components/molecules/filter-molecule.ejs') %>  
+    <section class="bg-gray-100">
+      <%- include('../components/molecules/filter-molecule.ejs') %>  
+    </section>
     <section class=" px-[15%] pt-10 pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 bg-gray-100">
         <div class="flex flex-col w-fit border max-w-[375px] shadow-lg bg-white hover:-translate-y-5 transition-all duration-500">
             <div class="w-full h-fit relative">
@@ -244,6 +246,7 @@
         </div>
         
     </section>
+    <%- include('../partials/tour-plan.ejs') %>
 
 <script>
   const selectedItems = document.querySelectorAll(".button-group");
