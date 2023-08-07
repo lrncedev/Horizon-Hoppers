@@ -24,6 +24,9 @@ app.get('/tours', (req, res)=> {
 app.get('/destination', (req, res)=> {
     res.render('pages/destination.ejs')
 })
+app.get('/details', (req, res)=> {
+    res.render('pages/tour-details.ejs')
+})
 
 
 app.listen(3000, ()=> {
