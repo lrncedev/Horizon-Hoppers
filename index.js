@@ -5,10 +5,13 @@ const offersData = require('./public/assets/data/offersData')
 const carouselData = require('./public/assets/data/carouselData')
 const itinerary = require('./public/assets/data/tourItinerary')
 const tourCardData = require('./public/assets/data/tourCardData')
+const expressLayout = require('express-ejs-layouts')
 const app = express()
 
+app.use(expressLayout)
 app.use(express.static('public'))
 app.set('view engine', 'ejs')
+app.set('layout', './layouts/master-layout.ejs')
 
 app.get('/', (req, res)=> {
     res.render('pages/landing-page.ejs', {adventureCategories, offersData, carouselData})
