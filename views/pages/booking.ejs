@@ -1,0 +1,124 @@
+<% title = "Booking" %>
+<%- include('../components/molecules/header-molecule.ejs') %>
+<%- include('../components/molecules/banner.ejs', {pagename: "Booking"})%>
+
+    <div>
+        <div class = "bg-white h-full p-10  flex flex-col md:flex-row lg:flex-row">
+            <div class = "bg-gray-100 flex w-fit ">
+              <!--FORM DETAILS-->
+              <div class = "h-full w-full sm:flex-col ">
+                <form>
+                  <h2 class ="p-8 text-3xl font-bold uppercase">your details</h2>
+                  <!--Email-->
+                  <div id="FullName" class="p-4 flex flex-col md:flex-row lg:flex-row gap-x-5 ">
+                    <div class = " ">
+                      <!-- First Name-->
+                      <label class = ""> Email</label><br>
+                      <input type="text" class = " w-72 h-10 border p-1 "name="">
+                    </div>
+                    <div class = " ">
+                      <!-- Last Name-->
+                      <label class = ""> First Name</label><br>
+                      <input type="text" class = " w-72 h-10 border p-1 "name="">
+                    </div>
+                     
+                  </div>
+
+
+                  <!--Email-->
+                  <div id="FullName" class="p-4 flex flex-col md:flex-row lg:flex-row gap-x-5 ">
+                    <div class = " ">
+                      <!-- First Name-->
+                      <label class = ""> Email</label><br>
+                      <input type="text" class = " w-72 h-10 border p-1 "name="">
+                    </div>
+                    <div class = " ">
+                      <!-- Last Name-->
+                      <label class = ""> First Name</label><br>
+                      <input type="text" class = " w-72 h-10 border p-1 "name="">
+                    </div>
+                     
+                  </div>
+
+                  <!--Phone-->
+                  <div id="FullName" class="p-4 flex flex-col md:flex-row lg:flex-row gap-x-5 ">
+                    <div class = " ">
+                      <!-- First Name-->
+                      <label class = ""> Phone</label><br>
+                      <input type="text" class = " w-72 h-10 border p-1 "name="">
+                    </div>
+                    
+                     
+                  </div>
+
+
+                
+                  
+                </form>
+
+                <!--PAYMENT INFORMATION-->
+                <form>
+                  <h2 class ="p-8 text-3xl font-bold uppercase">payment information</h2>
+                  <!--Email-->
+                  <div id="FullName" class="p-4 flex flex-col md:flex-row lg:flex-row gap-x-5 ">
+                    
+                    <div class = "  w-full ">
+                      <!-- Last Name-->
+                      <label class = "">Name on Card</label><br>
+                      <input type="text" class = " w-full h-10 border p-1 "name="">
+                    </div>
+                     
+                  </div>
+
+
+                  <!--Card Details-->
+                  <div id="FullName" class="p-4 flex flex-col md:flex-row lg:flex-row gap-x-5 ">
+                    <div class = " ">
+                      <!-- Card Number-->
+                      <label class = ""> Card Number</label><br>
+                      <input type="text" class = " w-72 h-10 border p-1 "name="">
+                    </div>
+                    <div class = "w-full h-full mt-5 ">
+                      <img src="https://demo.bosathemes.com/html/travele/assets/images/cards.png">
+                    </div>
+                     
+                  </div>
+
+                 <!-- Card Security-->
+                  <div id="FullName" class="p-4 flex flex-col md:flex-row lg:flex-row gap-x-5 ">
+                    <div class = " ">
+                      <!-- Exp Date-->
+                      <label class = ""> Expiration Date</label><br>
+                      <input type="text" class = " w-36  h-10 border p-1 "name="">
+                    </div>
+                    <div class = "w-fit ">
+                      <!-- Year-->
+                      <label class = ""> </label><br>
+                      <input type="text" class = "w-36  h-10 border p-1 "name="">
+                    </div>
+                    <div class = "w-fit ">
+                      <!-- First Name-->
+                      <label class = "text-sm"> Security Code</label><br>
+                      <input type="text" class = " w-20  h-10 border p-1 "name="">
+                    </div>
+                    <div class = " mt-5 flex flex-row ">
+                      <img src="https://demo.bosathemes.com/html/travele/assets/images/icon_ccv.gif" class="w-fit">
+                      <p class="text-sm p-2">Last 3 digits</p>
+                    </div>
+                     
+                  </div>
+
+
+                
+                  
+                </form>
+              </div>
+            </div>
+                                  
+            <div class = "bg-red-900">
+                <h1>Hello </h1>
+            </div>
+        </div>
+        </div>
+    
+    <%- include('../partials/footer.ejs') %>

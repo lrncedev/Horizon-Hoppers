@@ -24,6 +24,10 @@ app.get('/tours', (req, res)=> {
 app.get('/destination', (req, res)=> {
     res.render('pages/destination.ejs')
 })
+app.get('/booking', (req, res)=> {
+    res.render('pages/booking.ejs')
+})
+
 app.get('/details', (req, res)=> {
     res.render('pages/tour-details.ejs')
 })
