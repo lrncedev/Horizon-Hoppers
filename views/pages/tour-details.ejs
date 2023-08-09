@@ -23,41 +23,4 @@
       },
       loop: true,
     });
-
-  const selectedItems = document.querySelectorAll(".button-group");
-  const optionsContainers = document.querySelectorAll(".option-container");
-  const groupTitle = document.querySelectorAll(".group-title");
-
-  selectedItems.forEach((selected, index) => {
-    selected.addEventListener("click", () => {
-      optionsContainers.forEach((container, containerIndex) => {
-        if(containerIndex == index) {
-          container.classList.toggle("active");
-          container.classList.toggle("z-50");
-          container.classList.toggle("hidden");
-        }
-        else {
-          container.classList.remove("active");
-          container.classList.remove("z-50");
-          container.classList.add("hidden");
-        }
-      })
-      
-    });
-    
-    const input = optionsContainers[index].querySelector('.search-box');
-    input.addEventListener('click', (e) => {
-      e.stopPropagation();
-    });
-
-    const items = optionsContainers[index].querySelectorAll('.option-item');
-    let groupItem = groupTitle[index];
-    items.forEach((item, index) => {
-      item.addEventListener('click', () => {
-        groupItem.textContent = item.textContent;
-        input.value = '';
-      })
-    })
-  });
-
 </script>
