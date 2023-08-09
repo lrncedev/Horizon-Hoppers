@@ -1,62 +1,62 @@
 <div class="   md:w-1/2 lg:w-1/3 p-3   " >
-  <!-- TOP CARD-->
-     <div class = "relative">
-        <div class="bg-emerald-700 absolute right-0 mt-5 ">
-           <h6 class="py-2 px-4 text-white "><span class="text-xl font-bold font-raleway">$ <%- priceperperson ;%> / per person</h6>
-        </div>
-        <figure class = "    ">
-           
-        <img src='/assets/stats-images/<%- picture ;%>' class=" h-fit w-full bg-cover"></img>
-        </figure>
-     
-        <!-- BOTTOM CARD-->
-        <div class ="bg-white -300 ">
-           <!-- SECTION1-->
-           <div class = "">
-              
-              <div class = "bg-white px-8">
-                 <div class="bg-dodger-blue -mt-6 py-3 mb-9 ml-30 mr-30  relative text-center text-white ">
-                    <div class = "flex flex-row w-full justify-center items-center h-fit">
-                       <li class="-r -gray-400 px-3 text-xs list-none"><i class="fa-regular fa-clock"></i> <%- daynightformat ;%> </li>
-                       <li class="-r -gray-400 px-3 text-xs list-none"><i class="fa-solid fa-user-group"></i> <%- numberOfPeople ;%></li>
-                       <li class="px-3 text-xs list-none"><i class="fa-solid fa-location-dot "></i> <%- location ;%> </li>
-                    </div>
-                 </div>
-              <!-- Title Card -->
-              <div class = " mt-9 mb-4">
-                 <p class="text-2xl font-raleway font-bold font-midnight"><%- packageTitle ;%></p>
-              </div>
-              <!--Review/Ratings-->
-              <div class = " mb-4 flex flex-row">
-                 <p class="text-sm font-opensans text-gray-600 p-1">(<%- numberOfReviews ;%> reviews)</p>
-                 <%- include('../atoms/ratingstars', {  ratingOutOfFive : ratingOutOfFive}); %>
-              </div>
-              <!--Content-->
-              <div class = " mb-4">
-                 <p class="text-base font-opensans"><%- description ;%>.</p>
-                 
-              </div> </div>
-           </div>
-           <div class ="bg-white">
-              <!-- FLOATING BAR-->
-                 
-              <!-- BUTTONS-->
-              <div class = " flex flex-row mt-7   border-t-2  ">
-                 <div class = "flex-1 flex items-center justify-center border-r-2">
-                    <button class="flex-shrink-0 py-5 font-semibold flex items-center gap-102 bg-transparent focus:outline-none  group">
-                       <span class="group-10hover:text-dodger-blue">Book Now</span>
-                       <i class="fas fa-arrow-right p-1 text-emerald-700 group-10 hover:text-dodger-blue"></i>
-                    </button>
-                 </div>
-                 <div class = " flex-1 flex items-center justify-center ">
-                    <button class="flex-shrink-0 py-5 font-semibold flex items-center gap-102 bg-transparent focus:outline-none group">
-                       <span class="group-10hover:text-dodger-blue">Wish List</span>
-                       <i class="far fa-heart p-1 text-emerald-700 group-10 hover:text-dodger-blue"></i>
-                    </button>
-                 </div>
-              </div>
-           </div>
-           
-        </div>
-     </div>
-  </div>
+<!-- TOP CARD-->
+    <div class = "relative">
+      <div class="bg-emerald-700 absolute right-0 mt-5 ">
+          <h6 class="py-2 px-4 text-white "><span class="text-xl font-bold font-raleway">$ <%= place.pricePerPerson ;%> / per person</h6>
+      </div>
+      <figure class = "    ">
+          
+      <img src='/assets/stats-images/<%= place.picture ;%>' class=" h-fit w-full bg-cover"></img>
+      </figure>
+    
+      <!-- BOTTOM CARD-->
+      <div class ="bg-white -300 ">
+          <!-- SECTION1-->
+          <div class = "">
+            
+            <div class = "bg-white px-8">
+                <div class="bg-dodger-blue -mt-6 py-3 mb-9 ml-30 mr-30  relative text-center text-white ">
+                  <div class = "flex flex-row w-full justify-center items-center h-fit">
+                      <li class="-r -gray-400 px-3 text-xs list-none"><i class="fa-regular fa-clock"></i> <%= place.dayNightFormat ;%> </li>
+                      <li class="-r -gray-400 px-3 text-xs list-none"><i class="fa-solid fa-user-group"></i> <%= place.numberOfPeople ;%></li>
+                      <li class="px-3 text-xs list-none"><i class="fa-solid fa-location-dot "></i> <%= place.location ;%> </li>
+                  </div>
+                </div>
+            <!-- Title Card -->
+            <div class = " mt-9 mb-4">
+                <p class="text-2xl font-raleway font-bold font-midnight"><%= place.packageTitle ;%></p>
+            </div>
+            <!--Review/Ratings-->
+            <div class = " mb-4 flex flex-row">
+                <p class="text-sm font-opensans text-gray-600 p-1">(<%= place.numberOfReviews ;%> reviews)</p>
+                <%- include('../atoms/ratingstars', {  ratingOutOfFive : place.ratingOutOfFive}); %>
+            </div>
+            <!--Content-->
+            <div class = " mb-4">
+                <p class="text-base font-opensans"><%= place.description ;%>.</p>
+                
+            </div> </div>
+          </div>
+          <div class ="bg-white">
+            <!-- FLOATING BAR-->
+                
+            <!-- BUTTONS-->
+            <div class = " flex flex-row mt-7   border-t-2  ">
+                <div class = "flex-1 flex items-center justify-center border-r-2">
+                  <button class="flex-shrink-0 py-5 font-semibold flex items-center gap-102 bg-transparent focus:outline-none  group">
+                      <span class="group-10hover:text-dodger-blue">Book Now</span>
+                      <i class="fas fa-arrow-right p-1 text-emerald-700 group-10 hover:text-dodger-blue"></i>
+                  </button>
+                </div>
+                <div class = " flex-1 flex items-center justify-center ">
+                  <button class="flex-shrink-0 py-5 font-semibold flex items-center gap-102 bg-transparent focus:outline-none group">
+                      <span class="group-10hover:text-dodger-blue">Wish List</span>
+                      <i class="far fa-heart p-1 text-emerald-700 group-10 hover:text-dodger-blue"></i>
+                  </button>
+                </div>
+            </div>
+          </div>
+          
+      </div>
+    </div>
+</div>
