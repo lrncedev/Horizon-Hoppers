@@ -1222,10 +1222,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(4 120 87 / var(--tw-bg-opacity));
 }
-.bg-emerald-800{
-  --tw-bg-opacity: 1;
-  background-color: rgb(6 95 70 / var(--tw-bg-opacity));
-}
 .bg-emerald-950{
   --tw-bg-opacity: 1;
   background-color: rgb(2 44 34 / var(--tw-bg-opacity));
@@ -1556,10 +1552,6 @@ video {
 .tracking-tight{
   letter-spacing: -0.025em;
 }
-.text-emerald-400{
-  --tw-text-opacity: 1;
-  color: rgb(52 211 153 / var(--tw-text-opacity));
-}
 .text-emerald-600{
   --tw-text-opacity: 1;
   color: rgb(5 150 105 / var(--tw-text-opacity));
@@ -1807,16 +1799,12 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.hover\:brightness-110:hover{
-  --tw-brightness: brightness(1.1);
+.hover\:brightness-105:hover{
+  --tw-brightness: brightness(1.05);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .hover\:brightness-200:hover{
   --tw-brightness: brightness(2);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-.hover\:brightness-105:hover{
-  --tw-brightness: brightness(1.05);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .hover\:drop-shadow-lg:hover{
@@ -2201,6 +2189,13 @@ video {
 
 
 
+  .md\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+
+
   .md\:font-bold{
     font-weight: 700;
   }
@@ -2386,6 +2381,27 @@ video {
   .lg\:text-7xl{
     font-size: 4.5rem;
     line-height: 1;
+  }
+
+
+
+  .lg\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+
+
+  .lg\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+
+
+  .lg\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 @media (min-width: 1280px){
