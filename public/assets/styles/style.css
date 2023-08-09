@@ -2248,6 +2248,13 @@ video {
 
 
 
+  .md\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+
+
   .md\:font-bold{
     font-weight: 700;
   }
@@ -2439,6 +2446,27 @@ video {
   .lg\:text-7xl{
     font-size: 4.5rem;
     line-height: 1;
+  }
+
+
+
+  .lg\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+
+
+  .lg\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+
+
+  .lg\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 @media (min-width: 1280px){
