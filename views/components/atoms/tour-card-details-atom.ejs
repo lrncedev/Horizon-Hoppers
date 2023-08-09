@@ -3,7 +3,7 @@
     <%= tourCardDatus.tourCardRating %>
 </div>
 <h3 class="pb-7 border-b">
-    <a class="text-3xl font-bold text-emerald-950 hover:text-emerald-500" href="/details">
+    <a class="text-3xl font-bold text-emerald-950 hover:text-emerald-500" href="/details/<%= tourCardDatus.tourCardDestination.toLowerCase() %>/<%= tourCardDatus.id %>">
         <%= tourCardDatus.tourCardTitle %>
     </a>
 </h3>
