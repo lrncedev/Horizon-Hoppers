@@ -359,6 +359,123 @@ const destinations = [
       
     ],
   },
+  {
+    country: 'Philippines',
+    countryImage: 'https://images.pexels.com/photos/4673637/pexels-photo-4673637.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    discounted: true,
+    discount: 15,
+    popular: true,
+    pricePerPerson: 1999, 
+    dayNightFormat: '10D/9N', 
+    numberOfPeople: 5, 
+    location: 'Philippines',  
+    packageTitle: "Discover, Relax, and Explore Philippines",  
+    numberOfReviews: 45,  
+    ratingOutOfFive : 5, 
+    description: 'Explore the stunning beauty of the Philippines as you wander through its tropical islands, where lush rainforests, pristine beaches, and crystal-clear waters await your arrival.', 
+    picture: 'https://images.pexels.com/photos/4673637/pexels-photo-4673637.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    tours: [
+      {
+        id: 1,
+        tourCardImage: 'https://images.pexels.com/photos/11686040/pexels-photo-11686040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        tourCardRating: '8.0 Superb',
+        tourCardTitle: "White Beach of Boracay",
+        tourCardDays: '2 Day',
+        tourCardPax: '5+',
+        tourCardDestination: 'Philippines',
+        tourCardWishList: true,
+        details: {
+          images: [
+            'https://images.unsplash.com/photo-1553195029-754fbd369560?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9yYWNheXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60','https://images.unsplash.com/photo-1601634021304-79309ec67040?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80','https://images.pexels.com/photos/4673637/pexels-photo-4673637.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', 'https://images.unsplash.com/photo-1551322127-bc5c4f4700d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Ym9yYWNheXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60','https://images.unsplash.com/photo-1462557522227-30b31bfb0db9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+          ],
+          overview: "Visiting Boracay is an invitation to experience paradise. With its powdery white sand beaches, crystal-clear turquoise waters, and vibrant nightlife, this tropical island in the Philippines promises a memorable and exhilarating getaway. From fun-filled water activities like snorkeling, diving, and kayaking to relaxing sunset cruises and beachside massages, there is something for everyone to enjoy. Indulge in delectable local cuisine, explore the island's lush jungles, and immerse yourself in the warm Filipino hospitality. Boracay offers an oasis of tranquility where breathtaking sunsets and endless adventure await, ensuring an unforgettable vacation filled with relaxation, excitement, and unforgettable memories."
+        }
+      },
+      {
+        id: 2,
+        tourCardImage: 'https://images.unsplash.com/photo-1615185403293-a8fb0482d24e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2hvY29sYXRlJTIwaGlsbHMlMjBib2hvbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        tourCardRating: '9.0 Superb',
+        tourCardTitle: "Chocolate Hills",
+        tourCardDays: '1 Day',
+        tourCardPax: '5+',
+        tourCardDestination: 'Philippines',
+        tourCardWishList: true,
+        details: {
+          images: [
+           'https://images.unsplash.com/photo-1667823506151-836beb11723d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80','https://images.unsplash.com/photo-1546068996-8da61faeceaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2hvY29sYXRlJTIwaGlsbHMlMjBib2hvbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60','https://images.unsplash.com/photo-1591506578484-d496b18a6908?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80','https://images.unsplash.com/photo-1515511210479-bc02c48ec763?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80', 'https://images.unsplash.com/photo-1591506578484-d496b18a6908?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+          ],
+          overview: "Bohol Chocolate Hills is a natural wonder that promises breathtaking sights for nature enthusiasts. With more than a thousand perfectly cone-shaped hills spread across an area of 50 square kilometers, visitors can expect to witness a mesmerizing panoramic view unlike any other. As these hills turn a stunning shade of chocolate brown during the dry season, it creates a surreal and captivating landscape that captivates the imagination. Whether hiking up the hills, capturing stunning photographs, or simply basking in the awe-inspiring beauty of the surroundings, visitors to Bohol Chocolate Hills can look forward to an unforgettable adventure and a true connection with nature.."
+        }
+      },
+      {
+        id: 3,
+        tourCardImage: 'https://images.unsplash.com/photo-1494676731265-5ed4f59790f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80',
+        tourCardRating: '9.0 Superb',
+        tourCardTitle: "Palawan",
+        tourCardDays: '1 Day',
+        tourCardPax: '5+',
+        tourCardDestination: 'Philippines',
+        tourCardWishList: true,
+        details: {
+          images: [
+            'https://images.unsplash.com/photo-1581216061628-2187b387eb5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1477&q=80',
+            'https://images.unsplash.com/photo-1616596136440-cdff4ce1b4ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80','https://images.unsplash.com/photo-1597454385911-5c1b58be62c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80','https://images.unsplash.com/photo-1529686342540-1b43aec0df75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80','https://images.unsplash.com/photo-1494676731265-5ed4f59790f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80'
+        ],
+          overview: "Palawan, a tropical paradise located in the Philippines, offers endless opportunities for breathtaking experiences and awe-inspiring natural wonders. From its crystal-clear turquoise waters to its vibrant coral reefs, Palawan promises an unforgettable escape for nature lovers and adventure seekers alike. Embark on exhilarating island hopping tours, snorkel alongside exotic marine life, or kayak through enchanting lagoons. Discover hidden caves, relax on pristine white-sand beaches, and immerse yourself in the rich local culture and cuisine. Palawan is a dream destination that guarantees unforgettable memories and moments of pure bliss.."
+        }
+      },
+      {
+        id: 4,
+        tourCardImage: 'https://images.unsplash.com/photo-1563175544-9759b48523b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80',
+        tourCardRating: '7.0 Superb',
+        tourCardTitle: "Rice Terraces",
+        tourCardDays: '1 Day',
+        tourCardPax: '5+',
+        tourCardDestination: 'Philippines',
+        tourCardWishList: true,
+        details: {
+          images: [
+            'https://images.unsplash.com/photo-1663265159276-9f716dda0e83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80', 'https://images.unsplash.com/photo-1563175544-9759b48523b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80','https://images.unsplash.com/photo-1575891606029-2ced119438a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80', 'https://images.unsplash.com/photo-1575891467811-70c900ebd3ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80','https://images.unsplash.com/photo-1663265159301-b9be59237e5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+        ],
+          overview: "Discover the timeless allure of the Banaue Rice Terraces in the Philippines, an emblem of both human ingenuity and natural beauty. Carved into the rugged Cordillera mountains over centuries, these terraces are an intricate mosaic of emerald fields that tell the story of ancient agricultural wisdom. Embark on a journey to this UNESCO World Heritage Site, where you'll witness the stunning interplay of culture and landscape. Trek through the terraced steps, meet the indigenous Ifugao communities who have preserved this heritage, and capture the essence of their traditions. The Banaue Rice Terraces promise not just a visual spectacle, but a soul-stirring connection to a heritage that's nurtured by the land and its people."
+        }
+      },
+    ],
+    itinerary: [
+      {
+        count: '01',
+        title: 'Day 1: Relax on White Beach, try water sports, and savor beachside dining',
+        time: '9:00 am to 10:00 am',
+        description: " Enjoy the world-famous White Beach, indulge in water sports, and bask in the island's vibrant nightlife.",
+        inclusion: ['Free Drinks', 'Free Umbrella', 'Free Tour']
+      },
+      {
+        count: '02',
+        title: 'Day 2: Hills of Mystery and Beauty.',
+        time: '9:00 am to 6:00 pm',
+        description: "Discover the enigmatic Chocolate Hills, explore the tarsier sanctuary, and cruise the scenic Loboc River.",
+        inclusion: ['Free Umbrella', 'Free cruise', 'Free Lunch']
+      },
+      {
+        count: '03',
+        title: 'Day 3: Island Gateway to Palawan Paradise.',
+        time: '8:00 am to 6:00 pm',
+        description: "Arrive in Palawan and settle into your accommodation, followed by a leisurely stroll along Sabang Beach.",
+        inclusion: ['Souvenirs', 'Free Tour', 'Free Photoshoot']
+      },
+      {
+        count: '04',
+        title: "Day 4:  Journey to the Majestic Rice Terraces.",
+        time: '5:00 am to 7:00 pm',
+        description: "Embark on a trek to Batad Village, where you'll be awed by the breathtaking Batad Rice Terraces, a UNESCO World Heritage Site.",
+        inclusion: ['Free Water', 'Free Sunscreen', 'Free Entrance Fee']
+      },
+      
+
+
+      
+    ],
+  },
   
 ]
 
