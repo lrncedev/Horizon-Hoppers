@@ -10,7 +10,8 @@ const destinations = [
     numberOfPeople: 5, 
     location: 'Malaysia',  
     packageTitle: 'Sunset view of beautiful lakeside resident',  
-    numberOfReviews: 20,  ratingOutOfFive : 4, 
+    numberOfReviews: 20,  
+    ratingOutOfFive : 4, 
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit luctus nec ullam. Ut elit tellus, luctus nec ullam elit tellpus.', 
     picture: 'package1.jpg',
     tours: [
@@ -77,7 +78,8 @@ const destinations = [
     numberOfPeople: 5, 
     location: 'Portugal',  
     packageTitle: 'Sunset view of beautiful lakeside resident',  
-    numberOfReviews: 20,  ratingOutOfFive : 4, 
+    numberOfReviews: 20,  
+    ratingOutOfFive : 4, 
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit luctus nec ullam. Ut elit tellus, luctus nec ullam elit tellpus.', 
     picture: 'package1.jpg',
     tours: [
@@ -144,7 +146,8 @@ const destinations = [
     numberOfPeople: 5, 
     location: 'Canada',  
     packageTitle: 'Sunset view of beautiful lakeside resident',  
-    numberOfReviews: 20,  ratingOutOfFive : 4, 
+    numberOfReviews: 20,
+    ratingOutOfFive: 4, 
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit luctus nec ullam. Ut elit tellus, luctus nec ullam elit tellpus.', 
     picture: 'package1.jpg',
     tours: [

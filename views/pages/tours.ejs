@@ -2,9 +2,14 @@
 
 <%- include('../components/molecules/banner.ejs', {pagename: "Tours"})%>
 
+<% if (!showTourPlan) { %>
 <section class="bg-gray-100 py-4">
   <%- include('../components/molecules/filter-molecule.ejs') %>  
 </section>
+<% } %>
+
 <%- include('../partials/tour-card-section.ejs')  %>
-<%- include('../partials/tour-plan.ejs')  %>
+<% if (showTourPlan) { %>
+  <%- include('../partials/tour-plan.ejs') %>
+<% } %>
 

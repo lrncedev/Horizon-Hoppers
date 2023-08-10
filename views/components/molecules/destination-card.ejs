@@ -7,7 +7,7 @@
     <%- include('../atoms/cta-book-now.ejs', {content: place.country}) %>
   </div>
   <div class="absolute bottom-0 left-0 p-4 flex flex-col">
-    <a href="" class="text-white font-bold text-xl capitalize"><%= place.packageTitle %></a>
+    <a href="/tours/<%=place.country.toLowerCase() %>" class="text-white font-bold text-xl capitalize"><%= place.packageTitle %></a>
     <%- include('../molecules/star-rating-molecule.ejs', { rating: 5 }) %>
   </div>
 </div>
