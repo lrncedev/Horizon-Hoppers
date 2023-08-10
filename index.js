@@ -26,7 +26,7 @@ app.get('/tours', (req, res) => {
     })
   })
 
-  res.render('pages/tours.ejs', {itinerary, tourCardData: placeholder})
+  res.render('pages/tours.ejs', {itinerary, tourCardData: placeholder, showTourPlan: false })
 })
 
 app.get('/destination', (req, res)=> {
@@ -41,7 +41,7 @@ app.get('/tours/:place', (req, res) => {
     return res.status(404).send('Place not found');
   }
 
-  res.render('pages/tours.ejs', {itinerary: place.itinerary, tourCardData: place.tours});
+  res.render('pages/tours.ejs', {itinerary: place.itinerary, tourCardData: place.tours, showTourPlan: true });
 })
 
 app.get('/booking', (req, res)=> {
@@ -60,7 +60,7 @@ app.get('/details/:place/:id', (req, res) => {
     return res.status(404).send('Place not found');
   }
 
-  res.render('pages/tour-details.ejs', {tour})
+  res.render('pages/tour-details.ejs', {tour, place})
 })
 
 
