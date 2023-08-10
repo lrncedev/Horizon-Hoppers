@@ -960,6 +960,12 @@ video {
 .max-h-\[3750px\]{
   max-height: 3750px;
 }
+.max-h-\[410px\]{
+  max-height: 410px;
+}
+.max-h-\[1000px\]{
+  max-height: 1000px;
+}
 .min-h-screen{
   min-height: 100vh;
 }
@@ -980,6 +986,12 @@ video {
 }
 .min-h-\[300px\]{
   min-height: 300px;
+}
+.min-h-\[1000px\]{
+  min-height: 1000px;
+}
+.min-h-\[500px\]{
+  min-height: 500px;
 }
 .w-10{
   width: 2.5rem;
