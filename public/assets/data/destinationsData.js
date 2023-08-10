@@ -137,7 +137,7 @@ const destinations = [
   },
   {
     country: 'Canada',
-    countryImage: 'https://demo.bosathemes.com/html/travele/assets/images/img4.jpg',
+    countryImage: 'https://images.unsplash.com/photo-1503614472-8c93d56e92ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=811&q=80',
     discounted: true,
     discount: 30,
     popular: true,
@@ -145,62 +145,130 @@ const destinations = [
     dayNightFormat: '7D/6N', 
     numberOfPeople: 5, 
     location: 'Canada',  
-    packageTitle: 'Sunset view of beautiful lakeside resident',  
+    packageTitle: 'Calming terrain of Moraine Lake',
     numberOfReviews: 20,
     ratingOutOfFive: 4, 
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit luctus nec ullam. Ut elit tellus, luctus nec ullam elit tellpus.', 
-    picture: 'package1.jpg',
+    description: "Moraine Lake is a glacially fed lake in Banff National Park, 14 kilometres outside the hamlet of Lake Louise, Alberta, Canada.",
+    picture: 'https://images.unsplash.com/photo-1503614472-8c93d56e92ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=811&q=80',
     tours: [
       {
         id: 1,
-        tourCardImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1164&q=80',
+        tourCardImage: 'https://images.unsplash.com/photo-1526863336296-fac32d550655?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
         tourCardRating: '8.0 Superb',
-        tourCardTitle: "Trader's Hotel",
-        tourCardDays: '3 Days',
-        tourCardPax: '4+',
-        tourCardDestination: 'Malaysia',
+        tourCardTitle: "Calgary",
+        tourCardDays: '1 Day',
+        tourCardPax: '5+',
+        tourCardDestination: 'Canada',
         tourCardWishList: true,
         details: {
           images: [
-            'https://layerdrops.com/tripo/assets/images/tour/tour-d-1-1.jpg',
-            'https://layerdrops.com/tripo/assets/images/tour/tour-d-1-2.jpg',
-            'https://layerdrops.com/tripo/assets/images/tour/tour-d-1-3.jpg',
-            'https://layerdrops.com/tripo/assets/images/tour/tour-d-1-4.jpg',
-            'https://layerdrops.com/tripo/assets/images/tour/tour-d-1-5.jpg',
+            'https://images.unsplash.com/photo-1574950333594-f3e9a9446d0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+            'https://images.prismic.io/telusspark/df3da90f-8518-4aa2-860d-ec3e296e7ede_TELUS+SPARK_Building.jpg?auto=compress,format',
+            'https://thewestleyhotel.com/wp-content/uploads/2021/06/calgary-stephen-avenue.jpg',
+            'https://images.ctfassets.net/gk8hs8lmghf8/6tVKN7EKyfdkZY28CRACCQ/ba9bd0d9184b582b7bac4e772f801a5a/35411544810_5ad7e69578_k.jpg ',
+            'https://th-thumbnailer.cdn-si-edu.com/jyJmJFPd5U8HEzIuwL-BHnP8KQE=/fit-in/1072x0/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/d4/51/d451de56-b4bb-48cc-82a4-4b0334610a5f/gatesofmountains.jpg',
           ],
-          overview: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit necessitatibus aliquid, laboriosam rerum saepe ipsa. Autem corporis sed eveniet eius quisquam porro explicabo quod expedita sint, deleniti voluptates delectus voluptatum?'
+          overview: "Calgary, a cosmopolitan Alberta city with numerous skyscrapers, owes its rapid growth to its status as the centre of Canada’s oil industry. However, it’s still steeped in the western culture that earned it the nickname “Cowtown,” evident in the Calgary Stampede, its massive July rodeo and festival that grew out of the farming exhibitions once presented here.",
+        }
+      },
+      {
+        id: 2,
+        tourCardImage: 'https://plus.unsplash.com/premium_photo-1669750818389-796d13fb323a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+        tourCardRating: '8.0 Superb',
+        tourCardTitle: "Banff Town",
+        tourCardDays: '3 Days',
+        tourCardPax: '5+',
+        tourCardDestination: 'Canada',
+        tourCardWishList: true,
+        details: {
+          images: [
+            'https://images.unsplash.com/photo-1533587032585-7c78bbeef622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+            'https://images.unsplash.com/photo-1455156218388-5e61b526818b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/440540648.jpg?k=382cce92a3365db33aafca619ad85c673c01ac98bc4b6feb6feec10d1a2dd452&o=&hp=1',
+            'https://www.mtlblog.com/media-library/image.jpg?id=26902961&width=1245&height=700&quality=85&coordinates=0%2C21%2C0%2C21',
+            'https://ychef.files.bbci.co.uk/1600x900/p018j887.webp'
+          ],
+          overview: "Start for Banff National Park. It is located about a 1.50 hours drive away. Plan to spend 3 days in Banff, and check off relaxing activities on day one. These include the following: Sulphur mountain gondola ride, Bow Falls, a walk, and a castle food tour at the famous Fairmont Banff Springs!",
+        }
+      },
+      {
+        id: 3,
+        tourCardImage: 'https://images.unsplash.com/photo-1516293635722-a0ae2709d570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80',
+        tourCardRating: '8.0 Superb',
+        tourCardTitle: "Lake Louise",
+        tourCardDays: '1 Day',
+        tourCardPax: '5+',
+        tourCardDestination: 'Canada',
+        tourCardWishList: true,
+        details: {
+          images: [
+            'https://images.unsplash.com/photo-1533520908216-c678e171f24b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+            'https://images.unsplash.com/photo-1514413534171-6914647601ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+            'https://www.banffjaspercollection.com/Brewster/media/Images/Hotels/Elk-and-Avenue/PX-Heart-of-Banff.jpg',
+            'https://cdn.sanity.io/images/6sugrgl1/production/40ee48be58636d0fcc718c195547e7a952d61b24-2000x1333.jpg?rect=0,224,2000,887&w=1988&h=882&fit=crop',
+            'https://www.banfflakelouise.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F6sugrgl1%2Fproduction%2F6a39ae4bd224ca84777fcd5a35fede6ee6abedb8-2000x1333.jpg%3Frect%3D0%2C60%2C2000%2C1215%26w%3D2120%26h%3D1288%26fit%3Dcrop&w=1200&q=75'
+          
+          ],
+          overview: "Lake Louise is a hamlet in Banff National Park in the Canadian Rockies, known for its turquoise, glacier-fed lake ringed by high peaks and overlooked by a stately chateau. Hiking trails wind up to the Lake Agnes Tea House for bird's-eye views. There's a canoe dock in summer, and a skating rink on the frozen lake in winter.",
+        }
+      },
+      {
+        id: 4,
+        tourCardImage: 'https://www.canadacrossroads.com/wp-content/uploads/2020/06/Lake-Emerald-Yoho-NP.jpg',
+        tourCardRating: '8.0 Superb',
+        tourCardTitle: "Yoho National Park",
+        tourCardDays: '1 Day',
+        tourCardPax: '5+',
+        tourCardDestination: 'Canada',
+        tourCardWishList: true,
+        details: {
+          images: [
+            'https://images.unsplash.com/photo-1580390631873-cf2906f10b68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+            'https://plus.unsplash.com/premium_photo-1664111294842-310e3b8fb5b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+            'https://glacierraft.com/wp-content/uploads/2015/03/winterkayak5-blog-1024x678.jpg',
+            'https://revelstokemountaineer.com/web/wp-content/uploads/2016/04/Kicking-Horse-rafting.jpg',
+            'https://plus.unsplash.com/premium_photo-1673239605771-ff5fe814e2bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80'
+          ],
+          overview: "Head to Yoho National Park in British Columbia on day 6. It is a quick ride from Lake Louise, and spend the day chasing the mightiest Takakkaw Falls, Natural Falls, Spiral Tunnels on Kicking Horse Pass, and the gorgeous Emerald Lake",
         }
       },
     ],
     itinerary: [
       {
         count: '01',
-        title: 'Day 1: Arrive at Kuala Lumpur Aiport',
-        time: '8:00 am to 10:00 am',
-        description: 'Lorem ipsum available isn but the majority have suffered alteratin in some or form injected. Lorem ipsum is simply free text used by copytyping refreshing. Neque porro est qui dolorem ipsum quia quaed inventore veritatis et quasi dicta sunt explicabo.',
-        inclusion: ['Free Drinks', 'Awesome Breakfast', '5 Star Accommodation']
+        title: 'Day 1: Arrive and explore Calgary ',
+        time: '8:00 am to 4:00 pm',
+        description: "Calgary is famous for the Calgary Stampede, Berta beef, and the 1988 Winter Olympics. Calgary is known as Cowtown, the Gateway to the Rocky Mountains, and the cleanest city in the world. Calgary is known for Fort Calgary, the Calgary Flames, and the “Texas of Canada.”",
+        inclusion: ['Free Zoo Admission', 'Awesome Breakfast', 'Free TELUS Spark Science Center Admission', "Free Meals"]
       },
       {
         count: '02',
-        title: 'Day 2: Lunch at  Bukit Bintang District',
-        time: '10:00 am to 12:00 nn',
-        description: 'Lorem ipsum available isn but the majority have suffered alteratin in some or form injected. Lorem ipsum is simply free text used by copytyping refreshing. Neque porro est qui dolorem ipsum quia quaed inventore veritatis et quasi dicta sunt explicabo.',
-        inclusion: ['Shopping', 'Awesome Lunch', 'Buffet']
+        title: 'Day 2 – 4: Drive to Banff, and explore',
+        time: '8:00 am to 4:00 pm',
+        description: 'Spend time exploring 3 beautiful lakes in Banff National Park, namely Two Jack Lake, Lake Minnewanka, and Vermillion Lakes. In the summer months, you can go kayaking and enjoy easy (1-2 hour) hikes',
+        inclusion: ['Hiking', 'Fishing', 'Buffet']
       },
       {
         count: '03',
-        title: 'Day 3: Picnic at Cameron Lands',
-        time: '8:00 am to 12:00 am',
-        description: 'Lorem ipsum available isn but the majority have suffered alteratin in some or form injected. Lorem ipsum is simply free text used by copytyping refreshing. Neque porro est qui dolorem ipsum quia quaed inventore veritatis et quasi dicta sunt explicabo.',
-        inclusion: ['Free Meal', 'Awesome Attractions', 'Chill Vibe']
+        title: 'Day 5: Lake Louise',
+        time: '8:00 am to 4:00 pm',
+        description: 'Enjoy a hike up to Agnes Tea House, or relax with a canoe ride. In the winters, you can go ice-skating and then warm up at the Fairmont Château Lake Louise. You can choose to stay overnight in Lake Louise too (Banff town to Lake Louise is a 90-minute drive, one way). ',
+        inclusion: ['Caneoing', 'Hiking', 'Tea House', 'Ice Skating']
       },
       {
         count: '04',
-        title: "Day 4: Stay at Trader's Hotel",
-        time: '8:00 am to 3:00 pm',
-        description: 'Lorem ipsum available isn but the majority have suffered alteratin in some or form injected. Lorem ipsum is simply free text used by copytyping refreshing. Neque porro est qui dolorem ipsum quia quaed inventore veritatis et quasi dicta sunt explicabo.',
-        inclusion: ['Free Meal', '5 Star Accommodation', 'Shopping']
-      }
+        title: 'Day 6: Yoho National Park',
+        time: '8:00 am to 4:00 pm',
+        description: 'Yoho National Park is in the Rocky Mountains, in eastern British Columbia, Canada. Waterfalls include Wapta Falls, on the Kicking Horse River, and towering Takakkaw Falls. A trail circles turquoise-coloured Emerald Lake, with a nearby natural stone bridge. ',
+        inclusion: ['Falls', 'Hiking', 'Rubber Rafting', 'Stone Bridge']
+      },
+      {
+        count: '05',
+        title: 'Day 7: Return to Calgary to Fly out',
+        time: '8:00 am to 12:00 nn',
+        description: 'Drive along the Icefield Parkway connecting Lake Louise and Jasper (day 7). Along the way make a stop at Peyto Lake, Columbia Icefield, and Sunwapta Falls before arriving in Jasper town (stay here overnight). ',
+        inclusion: ['Staying', 'Free Meals', 'Shopping']
+      },
     ],
   },
   {

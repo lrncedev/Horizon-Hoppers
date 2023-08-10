@@ -1,7 +1,7 @@
 <div class="relative group ">
-  <figure class="">   
+  <figure class="h-full">   
     <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50 group-hover:opacity-0 transition-opacity"></div>
-    <img src="<%= place.countryImage %>" alt="" class="w-full object-cover object-center">
+    <img src="<%= place.countryImage %>" alt="" class="h-full w-full object-cover object-center">
   </figure>
   <div class="absolute top-5 left-5 text-white uppercase font-bold">
     <%- include('../atoms/cta-book-now.ejs', {content: place.country}) %>
